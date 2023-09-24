@@ -1,5 +1,5 @@
 
-# Landing page
+# Portfolio
 
 CodeSoft Task 2,
 Created Complete fully responsive Portfolio that works on all devices using HTML and CSS ,Tailwind , Js
