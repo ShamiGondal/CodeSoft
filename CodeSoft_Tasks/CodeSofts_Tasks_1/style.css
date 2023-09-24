@@ -6,25 +6,25 @@
 
 nav {
   background-color: #ffebe7;
-  height: 1.5rem;
-  font-size: 2.5rem;
-  padding: 3rem;
+  height: 1rem;
+  font-size: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .Logo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   z-index: 1;
 }
 
 #diamond {
   color: #65daff;
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  left: 30px;
+  left: 15px;
   z-index: -1;
 }
 
@@ -35,12 +35,12 @@ nav {
 
 li {
   color: rgb(31, 30, 30);
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
 li:hover {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
 }
 
 .menu_content {
@@ -48,12 +48,12 @@ li:hover {
   list-style: none;
   justify-content: space-evenly;
   align-items: center;
-  gap: 100px;
+  gap: 70px;
 }
 
 .btn_1 {
   background-color: white;
-  padding: 20px 60px 20px 60px;
+  padding: 10px 40px 10px 40px;
   font-size: 1.5rem;
   color: black;
   border: none;
@@ -69,12 +69,13 @@ li:hover {
 
 .btn_2 {
   background-color: #2f327d;
-  padding: 20px 60px 20px 60px;
+  padding: 10px 40px 10px 40px;
   font-size: 1.5rem;
   color: white;
   border: none;
   border-radius: 28px;
   cursor: pointer;
+  margin-right: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -84,19 +85,20 @@ li:hover {
 
 .body_content {
   background-color: #ffebe7;
-  height: 1300px;
+  height: 1100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
 .left {
-  padding: 200px;
+  margin-top: 160px;
+  padding: 100px;
 }
 
 .left h1 {
   color: #2f327d;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 900;
 }
 
@@ -107,7 +109,7 @@ li:hover {
 .left p {
   margin-top: 20px;
   color: rgb(78, 75, 75);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .left_btns {
@@ -117,7 +119,7 @@ li:hover {
 .l_btn_1 {
   margin-top: 20px;
   background-color: #ff7a59;
-  padding: 20px 40px 20px 40px;
+  padding: 10px 30px 10px 30px;
   font-size: 1.5rem;
   color: white;
   border: none;
@@ -127,7 +129,7 @@ li:hover {
 }
 
 .l_btn_1:hover {
-  padding: 20px 50px 20px 50px;
+  padding: 20px 40px 20px 40px;
 }
 
 .l_btn_2 {
@@ -158,11 +160,15 @@ li:hover {
 }
 
 .right {
-  padding: 20px;
-  background-image: url(./assests//Untitled\ design\ \(1\).png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  height: 1000px;
+  width: 840px;
+  margin-top: -100px;
 }
 
 .wave_divider {
@@ -181,7 +187,7 @@ li:hover {
 }
 
 .details h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 2rem;
   font-weight: bold;
   color: #767681;
@@ -190,8 +196,8 @@ li:hover {
 .icons {
   margin-top: 100px;
   display: flex;
-  gap: 200px;
-  font-size: 7rem;
+  gap: 100px;
+  font-size: 4rem;
   color: #767681;
 }
 
@@ -218,7 +224,7 @@ li:hover {
   text-align: center;
   margin-top: 50px;
   width: 900px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #767681;
 }
 
@@ -229,7 +235,7 @@ li:hover {
 }
 
 .card {
-  width: 400px;
+  width: 300px;
   height: 300px;
   margin-top: 200px;
   display: flex;
