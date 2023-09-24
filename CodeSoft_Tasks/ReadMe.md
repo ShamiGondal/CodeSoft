@@ -4,7 +4,7 @@
 
 ## Authors
 
-- [@Ehtisham Ahmed Gondal](https://github.com/ShamiGondal
+- [@Ehtisham Ahmed Gondal](https://github.com/ShamiGondal)
 
 
 ## 🚀 About Me
