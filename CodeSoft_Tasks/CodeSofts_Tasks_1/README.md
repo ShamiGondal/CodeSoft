@@ -1,12 +1,29 @@
-Practice set 2,
-Assignmnet 2,
-Creating portfolio landing page for mobile device.
 
-Preview
+# Landing page
+
+CodeSoft Task 1,
+Created Landing page that works on mobile devices and Laptops using HTML and CSS
+
+## Authors
+
+- [@Ehtisham Ahmed Gondal](https://github.com/ShamiGondal)
+
+
+## 🚀 About Me
+I'm a full stack web developer...
+
+
+## FAQ
+
+#### Question 1
+Is it responsive
+
+Answer 
+
+Yes
 
 
 
 
-
-
-Author: Ehtisham Ahmed Gondal
+## Demo
+https://mr-shami-learnhub.netlify.app/
