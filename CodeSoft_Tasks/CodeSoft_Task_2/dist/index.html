@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ehtisham'sPortfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/f448c1038a.js" crossorigin="anonymous" type="module"></script>
+  
+
+  <style>
+    .hid {
+
+      opacity: 0;
+      filter: blur(3px);
+      transition: all 1s;
+      transform: translateY(150px);
+
+    }
+
+    .show {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateY(0);
+
+    }
+  </style>
+
+  <script type="module" crossorigin src="/assets/index-fffd7aa3.js"></script>
+  <link rel="stylesheet" href="/assets/index-3992cb54.css">
+</head>
+
+<body class="bg-[#0b0952]">
+
+  <!-- LoderCode -->
+  <div id="loader" class="loaderContainer  flex fixed top-[50%] left-[50%] transform translate-[-50%, -50%]">
+    <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500"></div>
+  </div>
+  <!-- alertcode -->
+  <div id="alert" class="z-50 hidden flex items-center p-4 mb-4 text-sm text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800 fixed top-[50%] left-[40%] transform translate-[-50%, -50%] " role="alert">
+    <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <span class="sr-only">Info</span>
+    <div>
+      <span class="font-medium">Warning alert!</span> Site is Protected.
+    </div>
+  </div>
+  <!-- WebsiteContent -->
+ <div id="content" class="z-10">
+  <!-- nav-section -->
+  <header>
+    <nav class="">
+      <div class="flex justify-between md:justify-evenly items-center p-4 md:p-7">
+        <div id="menu_btn" class="menu_btn text-white font-bold md:hidden">
+          <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="log0 text-white font-bold order-3 md:order-none cursor-pointer">
+          Ehtisham's
+          <span class="text-[#fd3e57] text-2xl"><i class="fa-sharp fa-solid fa-p"></i></span>
+          Follio
+        </div>
+        <!-- menu -->
+        <div id="menu_content"
+          class=" z-50 text-white inset-0 absolute mt-14 md:mt-0 md:flex md:static md:space-x-10 md:space-y-0 md:items-center bg-[#123758] border border-[#252468]  shadow-lg md:shadow-none md:border-none bg-opacity-[90%] p-2 md:p-0  md:bg-transparent h-[90%] w-[60%] md:w-auto md:h-auto hidden active:block md:active:flex transition-transform  duration-300 ease-in-out">
+          <div
+            class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1   border-b-[1px] border-[#7f7f8b] p-4 md:border-none">
+            <a href="#home" ><span class="md:hidden"><i class="fa-solid fa-house"></i></span>  Home</a>
+          </div>
+          <div
+            class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1  border-b-[1px] border-[#7f7f8b] p-4 md:border-none">
+            <a href="#about"><span class="md:hidden"><i class="fa-solid fa-user"></i></span>   About</a>
+          </div>
+          <div
+            class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1  border-b-[1px] border-[#7f7f8b] p-4 md:border-none">
+            <a href="#portfolio"><span class="md:hidden"><i class="fa-solid fa-user"></i></span>   Portfolio</a>
+          </div>
+          <div
+            class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1  border-b-[1px] border-[#7f7f8b] p-4 md:border-none">
+            <a href="#skills"><span class="md:hidden"><i class="fa-solid fa-gear"></i></span>  Skills</a>
+          </div>
+          <div
+            class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1  border-b-[1px] border-[#7f7f8b] p-4 md:border-none">
+            <a href="#services"><span class="md:hidden"><i class="fa-brands fa-servicestack"></i></span>  Services</a>
+          </div>
+          <div
+            class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1  border-b-[1px] border-[#7f7f8b] p-4 md:border-none">
+            <a href="#contact"><span class="md:hidden"><i class="fa-regular fa-address-book"></i></span>   Contact</a>
+          </div>
+        </div>
+        <div
+          class="btn order-3 bg-[#0c0b69] border-[#651a4c] border p-1 pl-2 pr-2 md:p-2 md:pl-4 md:pr-4 md:hover:-mt-1 md:hover:pl-5 md:hover:pr-5 text-white">
+          <button>Lets Talk</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- heroSection -->
+  <div class="heroSection flex items-center justify-center">
+    <div class="herocontent flex flex-col md:flex-row md:justify-center">
+      <div class="mt-28 md:mt-56 md:ml-44 flex flex-col items-center md:items-baseline animate__animated animate__fadeInLeft">
+        <h1 class="text-white font-bold text-xl md:text-4xl">
+          I'am <span class="text-[#fe3e57] ">Ehtisham</span> Ahmed Gondal
+        </h1>
+        <p class="text-[#fffeff] font-light text-sm md:text-2xl">
+          <span id="element" class="font-light"></span>
+        </p>
+        <div class="social_icon flex space-x-8 mt-3">
+          <button
+            class="text-xl md:text-2xl text-[#0077b5] border border-[#0077b5] p-1 pl-2 pr-2 rounded-lg cursor-pointer md:hover:text-3xl">
+            <i class="fa-brands fa-linkedin"></i>
+          </button>
+          <button
+            class="text-xl md:text-2xl text-[#3b579d] border border-[#3b579d] p-1 pl-2 pr-2 rounded-lg cursor-pointer md:hover:text-3xl">
+            <i class="fa-brands fa-square-facebook"></i>
+          </button>
+          <button
+            class="text-xl md:text-2xl text-white border border-black p-1 pl-2 pr-2 rounded-lg cursor-pointer md:hover:text-3xl">
+            <i class="fa-brands fa-github"></i>
+          </button>
+        </div>
+      </div>
+      <div class="img md:w-fit mt-14 w-full flex flex-col sticky animate__animated animate__fadeInRight">
+        <img src="/assets/miimg-5e838fdf.png" class="h-[550px] md:h-[700px] w-[500px] z-10" alt="MyImage" />
+      </div>
+    </div>
+  </div>
+  <!-- aboutMeSection -->
+  <div id="about" class="bg-[#070640] h-auto -mt-[9rem] md:mt-[-16rem] p-10 ">
+    <h1 class="text-white pt-40 md:pl-60 pb-10 font-bold text-4xl hid">About Me</h1>
+    <div class="md:pl-20 flex items-center justify-center md:space-x-36 space-y-8 md:space-y-0 flex-col md:flex-row">
+      <img src="/assets/WhatsApp Image 2023-09-01 at 19.25.18-0601dd8d.jpg" class="h-[400px] w-[500px] hid" alt="">
+      <div class="">
+        <h1 class="text-2xl font-bold ml-3 text-white">I create products<br> not just art</h1>
+        <p class="text-white w-[300px] md:w-[400px] p-3 hid">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+          adipisci quis veniam commodi, ipsum harum eos expedita facere? Porro unde amet possimus nobis Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Minima accusantium ducimus cumque dolore! Blanditiis deserunt
+          cupiditate quasi nisi sed, voluptate sit tempore et? Tempore dolorem atque maxime delectus exercitationem
+          accusantium, voluptas perferendis impedit.
+        </p>
+        <button class="text-sm text-white bg-gradient-to-r to-[#6876df] from-[#7450a9] rounded-3xl shadow-sm
+        shadow-[#726a6a] p-2 hover:text-[1rem] ml-3  hid">Download My Resume</button>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- portfolio-container -->
+  <div id="portfolio" class="h-auto p-10">
+    <h1 class="text-white pt-40 md:pl-72 pb-10 font-bold text-4xl hid">Portfolio</h1>
+
+    <div class="portfolio flex items-center justify-center md:space-x-1 md:flex-row flex-col">
+      <div class="card   h-[250px] w-[350px] shadow-md shadow-[#8b8282] hid"
+        style="background-image: url(data:image/avif;base64,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); background-size: cover;">
+        <div class="p-2 space-y-2 mt-40 ">
+          <h1
+            class="text-white hover:cursor-pointer  text-xs  flex hover:text-sm bg-[#0b095d] w-fit p-2 border border-[#ab2843]">
+            Microsoft Clone</h1>
+          <button class="text-xs hover:text-sm text-black border border-black p-1 pl-2 pr-2 rounded-lg cursor-pointer">
+            <i class="fa-brands fa-github"></i> Git Hub
+          </button>
+        </div>
+      </div>
+      <div class="card   h-[250px] w-[350px] md:-mt-36 mt-3 shadow-md shadow-[#8b8282] hid"
+        style="background-image: url(/assets/card2-809b6397.jpg); background-size: cover;">
+        <div class="p-2 space-y-2 mt-40">
+          <h1
+            class="text-white hover:cursor-pointer  text-xs  flex hover:text-sm bg-[#0b095d] w-fit p-2 border border-[#ab2843]">
+            FaceBook Clone</h1>
+          <button class="text-xs hover:text-sm text-black border border-black p-1 pl-2 pr-2 rounded-lg cursor-pointer">
+            <i class="fa-brands fa-github"></i> Git Hub
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <div class="portfolio flex items-center justify-center md:space-x-1   md:flex-row flex-col ">
+      <div class="card  h-[250px] w-[350px] shadow-md shadow-[#8b8282] mt-3 md:mt-1 hid"
+        style="background-image: url(/assets/card3-b280952e.jpg); background-size: cover;">
+        <div class="p-2 space-y-2 mt-40 ">
+          <h1
+            class="text-white hover:cursor-pointer  text-xs  flex hover:text-sm bg-[#0b095d] w-fit p-2 border border-[#ab2843]">
+            Amazon Clone</h1>
+          <button class="text-xs hover:text-sm text-black border border-black p-1 pl-2 pr-2 rounded-lg cursor-pointer">
+            <i class="fa-brands fa-github"></i> Git Hub
+          </button>
+        </div>
+      </div>
+      <div class="card   h-[250px] w-[350px] md:mt-[-8.5rem] mt-3 shadow-md shadow-[#8b8282] hid"
+        style="background-image: url(data:image/avif;base64,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); background-size: cover;">
+        <div class="p-2 space-y-2 mt-40">
+          <h1
+            class="text-white hover:cursor-pointer  text-xs  flex hover:text-sm bg-[#0b095d] w-fit p-2 border border-[#ab2843]">
+            See all Projects</h1>
+          <button class=" text-xs hover:text-sm text-black border border-black p-1 pl-2 pr-2 rounded-lg cursor-pointer">
+            <i class="fa-brands fa-github"></i> Git Hub
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonials section -->
+  <div class="  h-auto bg-[#131b5a] md:p-20 pl-2  pt-4 pb-4">
+    <div class=" flex flex-col ">
+      <h1 class="text-4xl text-white font-bold md:pl-60 hid">Testimonials</h1>
+      <div id="card-slider"
+        class="card-slider  message md:ml-60 mt-8  w-auto p-3  border-[#232264] border-[0.1px] border-r-0 bg-[#151659] opacity-80% flex flex-col md:block  hid ">
+        <div class=" card-wrapper relative  transition-transform duration-300 ease-in flex  space-x-10 ">
+          <div class="card ">
+            <p class="md:w-[600px] w-[300px]  text-sm text-white"><Span class="text-5xl">"</Span><br>Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis sed soluta magnam natus repellendus quibusdam expedita,
+              iure error fugit officia placeat. Praesentium, id.</p>
+            <div class="flex  space-x-3 mt-5">
+              <div class="img">
+                <img src="/assets/myimg-f9a98e6b.png" class="h-[70px] w-[70px] border border-red-300" alt="">
+              </div>
+              <div class="">
+                <p class="text-xs text-[#fd3e57] font-bold mt-4">Badar Munir</p>
+                <p class=" text-xs text-white font-light mt-1">CEO of SoftAmis</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="md:w-[600px] w-[300px]  text-sm text-white"><Span class="text-5xl">"</Span><br>Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis sed soluta magnam natus repellendus quibusdam expedita,
+              iure error fugit officia placeat. Praesentium, id.</p>
+            <div class="flex  space-x-3 mt-5">
+              <div class="img">
+                <img src="/assets/myimg-f9a98e6b.png" class="h-[70px] w-[70px] border border-red-300" alt="">
+              </div>
+              <div class="">
+                <p class="text-xs text-[#fd3e57] font-bold mt-4">Badar Munir</p>
+                <p class=" text-xs text-white font-light mt-1">CEO of SoftAmis</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="md:w-[600px] w-[300px]  text-sm text-white"><Span class="text-5xl">"</Span><br>Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis sed soluta magnam natus repellendus quibusdam expedita,
+              iure error fugit officia placeat. Praesentium, id.</p>
+            <div class="flex  space-x-3 mt-5">
+              <div class="img">
+                <img src="/assets/myimg-f9a98e6b.png" class="h-[70px] w-[70px] border border-red-300" alt="">
+              </div>
+              <div class="">
+                <p class="text-xs text-[#fd3e57] font-bold mt-4">Badar Munir</p>
+                <p class=" text-xs text-white font-light mt-1">CEO of SoftAmis</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="md:w-[600px] w-[300px]  text-sm text-white"><Span class="text-5xl">"</Span><br>Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis sed soluta magnam natus repellendus quibusdam expedita,
+              iure error fugit officia placeat. Praesentium, id.</p>
+            <div class="flex  space-x-3 mt-5">
+              <div class="img">
+                <img src="/assets/myimg-f9a98e6b.png" class="h-[70px] w-[70px] border border-red-300" alt="">
+              </div>
+              <div class="">
+                <p class="text-xs text-[#fd3e57] font-bold mt-4">Badar Munir</p>
+                <p class=" text-xs text-white font-light mt-1">CEO of SoftAmis</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div
+          class="   h-[70px] w-[230px] p-2  flex  float-right  mt-8 md:mt-12 md:mr-[35rem] ml-4   items-center justify-center  space-x-5 gap-5 ">
+          <div id="nextBtn" class="hidden md:block border border-white p-2 rounded-[50%]">
+            <button id="nextBtn" class=" rounded-[50%] bg-[#5462e9] p-3 text-sm hover:cursor-pointer active:text-xl"><i
+                class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div id="prevBtn" class=" prevBtn hidden md:block border border-white p-2 rounded-[50%]">
+            <button class=" rounded-[50%] bg-[#5462e9] p-3 text-sm hover:cursor-pointer active:text-xl"><i
+                class="fa-solid fa-arrow-left"></i></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- skills section -->
+  <div id="skills" class="skills p-20 flex items-center justify-center ">
+    <h1 class="text-white font-bold  text-3xl h-fit -mt-[25rem]  md:-ml-16 -ml-16 hid">Skills</h1>
+    <div id="slider_1" class="slider  md:w-[1200px] w-auto flex mt-16 md:-ml-0  ">
+      <button id="prev_Btn"
+        class=" hidden md:block z-50 md:bg-[#5462e9] bg-opacity-[50%] p-2 text-2xl text-white hover:cursor-pointer  md:left-0 -left-0  sticky rounded-full hid"><i
+          class="fa-solid fa-arrow-left"></i></button>
+      <div id="slider_1" class="wrapper flex   space-x-8 transition-transform duration-300 ease-in z-10">
+
+        <div
+          class="card md:w-[500px] w-[500px] flex items-center justify-center flex-col bg-[#123758]  p-4 text-white shadow-lg shadow-black rounded-xl space-x-4 hid">
+          <img src="/assets/html-4af74654.png" class="w-[150px] h-[150px] -mt-4" alt="htmlicon">
+          <hr class="bg-white w-full h-1 ml-0">
+          <div class="content flex items-center justify-center flex-col space-y-4">
+            <h2 class="text-xl font-bold mt-4">HTML</h2>
+            <span class="text-center text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+              hic!</span>
+          </div>
+        </div>
+        <div
+          class="card md:w-[500px] flex items-center justify-center flex-col bg-[#123758] w-fit p-4 text-white shadow-lg shadow-black rounded-xl space-x-4 hid">
+          <img src="/assets/css_tailwind-0f128adf.png" class="w-[150px] h-[150px] -mt-4" alt="htmlicon">
+          <hr class="bg-white w-full h-1 ml-0">
+          <div class="content flex items-center justify-center flex-col space-y-4">
+            <h2 class="text-xl font-bold mt-4">CSS + TailwindCss</h2>
+            <span class="text-center text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+              hic!</span>
+          </div>
+        </div>
+        <div
+          class="card flex items-center justify-center flex-col bg-[#123758] w-fit p-4 text-white shadow-lg shadow-black rounded-xl space-x-4 hid">
+          <img src="/assets/js-0547f178.png" class="w-[150px] h-[150px] -mt-4" alt="htmlicon">
+          <hr class="bg-white w-full h-1 ml-0">
+          <div class="content flex items-center justify-center flex-col space-y-4">
+            <h2 class="text-xl font-bold mt-4">JavaScript</h2>
+            <span class="text-center text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+              hic!</span>
+          </div>
+        </div>
+        <div
+          class="card flex items-center justify-center flex-col bg-[#123758] w-fit p-4 text-white shadow-lg shadow-black rounded-xl space-x-4 hid">
+          <img src="/assets/java-8d1598bc.png" class="w-[150px] h-[150px] -mt-4" alt="htmlicon">
+          <hr class="bg-white w-full h-1 ml-0">
+          <div class="content flex items-center justify-center flex-col space-y-4">
+            <h2 class="text-xl font-bold mt-4">Java</h2>
+            <span class="text-center text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+              hic!</span>
+          </div>
+        </div>
+        <div
+          class="card flex items-center justify-center flex-col bg-[#123758] w-fit p-4 text-white shadow-lg shadow-black rounded-xl space-x-4 hid">
+          <img src="/assets/c__-9e14f85d.png" class="w-[150px] h-[150px] -mt-4" alt="htmlicon">
+          <hr class="bg-white w-full h-1 ml-0">
+          <div class="content flex items-center justify-center flex-col space-y-4">
+            <h2 class="text-xl font-bold mt-4">C++</h2>
+            <span class="text-center text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
+              hic!</span>
+          </div>
+        </div>
+      </div>
+      <button id="next_Btn"
+        class=" hidden md:block z-50 md:bg-[#5462e9] bg-opacity-[50%] p-3 w-auto text-2xl text-white hover:cursor-pointer   md:right-0 -right-3 sticky rounded-full hid"><i
+          class="fa-solid fa-arrow-right  "></i></button>
+    </div>
+  </div>
+  <!-- services Section -->
+  <div id="services"
+    class="services w-full h-auto p-10 bg-[#050446] flex  flex-col space-y-10 items-center justify-center">
+    <h1 class="text-3xl text-white font-bold hid">Services</h1>
+    <div class="flex md:space-x-10 md:flex-row flex-col">
+      <div class="service1 flex md:space-x-3 hid">
+        <img class="md:h-[200px] md:w-[220px] h-[150px] w-[160px]" src="/assets/1-20635ea8.png" alt="PorductDesignImage">
+        <div class="text-white space-y-4 md:mt-10 mt-5">
+          <h1 class="md:text-xl text-sm font-bold">Product <br>Design</h1>
+          <p class="md:w-[290px] text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, numquam?</p>
+        </div>
+      </div>
+      <div class="service1 flex md:space-x-3 md:ml-0 ml-5 hid">
+        <img class="md:h-[200px] md:w-[200px] h-[150px] w-[160px]" src="/assets/2-d43cd430.png" alt="PorductDesignImage">
+        <div class="text-white space-y-4 md:mt-10 mt-5">
+          <h1 class="md:text-xl text-sm font-bold">Web <br>Design</h1>
+          <p class="md:w-[290px] text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, numquam?</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex md:space-x-10 md:flex-row flex-col md:ml-16 hid">
+      <div class="service1 flex md:space-x-3">
+        <img class="md:h-[200px] md:w-[190px] h-[150px] w-[160px]" src="/assets/3-223d0997.png" alt="PorductDesignImage">
+        <div class="text-white space-y-4  md:mt-10 mt-5">
+          <h1 class="md:text-xl text-sm  font-bold">Visual <br>Design</h1>
+          <p class="md:w-[290px] text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, numquam?</p>
+        </div>
+      </div>
+      <div class="service1 flex md:space-x-3 -ml-5 md:-ml-0 hid">
+        <img class="md:h-[200px] md:w-[220px] h-[150px] w-[160px]" src="/assets/4-b88b673d.png" alt="PorductDesignImage">
+        <div class="text-white space-y-4  md:mt-10 mt-5">
+          <h1 class="md:text-xl text-sm  font-bold">Business <br>Strategy</h1>
+          <p class="md:w-[290px] text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, numquam?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contactUs secton -->
+  <div id="contact" class="flex justify-center">
+    <div class="text-3xl text-white font-bold text-center p-10 absolute hid">Lets Talk</div>
+    <div class="about flex flex-col md:flex-row justify-center items-center md:space-x-12 p-10 hid ">
+
+      <div
+        class="flex flex-col mt-16 p-10 md:pl-16 md:pr-16  space-y-14 bg-[#0c0b44] border border-[#2e2e43] items-center">
+        <div class=" md:space-x-6  flex md:flex-row flex-col space-y-20 md:space-y-0">
+          <input type="text" placeholder="First Name"
+            class="bg-transparent border-b-[1px] border-[#2e2e43] p-2 md:w-auto w-[250px]">
+          <input type="text" placeholder="Last Name"
+            class="bg-transparent border-b-[1px] border-[#2e2e43] p-2  md:w-auto w-[250px]">
+        </div>
+        <div class=" space-x-6">
+          <input type="text" placeholder="Email "
+            class="bg-transparent border-b-[1px] border-[#2e2e43] p-2 md:w-[430px] w-[250px]">
+        </div>
+        <div class=" space-x-6">
+          <input type="text" placeholder="Your Message"
+            class="bg-transparent border-b-[1px] border-[#2e2e43] md:h-[190px] h-[140px] p-2 text-[#f0f0ef] md:w-[430px] w-[250px]">
+        </div>
+        <div class="items-center">
+          <button
+            class="text-white bg-[#fe3e57] p-4 pr-8 pl-8 rounded-3xl cursor-pointer hover:-mt-1 hover:text-sm">Send
+            Message</button>
+        </div>
+      </div>
+      <div class="flex flex-col space-y-8  mt-14">
+        <div class="location space-y-4 p-14 border border-[#2e2e43] rounded-lg bg-[#0c0b44] hid">
+          <h1 class="text-sm font-bold text-white">DHA Phase 3, SoftAims Lahore</h1>
+          <div class="flex space-x-3 text-xl text-[#fe3e57]">
+            <i class="fa-solid fa-location-crosshairs"></i><span class="text-[#838286] text-sm"> Office Address</span>
+          </div>
+        </div>
+        <div class="location space-y-4 p-14 border border-[#2e2e43] rounded-lg bg-[#0c0b44] hid">
+          <h1 class="text-sm font-bold text-white">DHA Phase 3, SoftAims Lahore</h1>
+          <div class="flex space-x-3 text-xl text-[#fe3e57]">
+            <i class="fa-solid fa-location-crosshairs"></i><span class="text-[#838286] text-sm"> Office Address</span>
+          </div>
+        </div>
+        <div class="location space-y-4 p-14 border border-[#2e2e43] rounded-lg bg-[#0c0b44] hid">
+          <h1 class="text-sm font-bold text-white">DHA Phase 3, SoftAims Lahore</h1>
+          <div class="flex space-x-3 text-xl text-[#fe3e57]">
+            <i class="fa-solid fa-location-crosshairs"></i><span class="text-[#838286] text-sm"> Office Address</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //footersection -->
+  <div
+    class="md:h-[150px] h-[250px] w-[100%] bg-[#121252] mt-16 p-6 flex justify-between items-center md:flex-row flex-col-reverse ">
+    <div class="log0 text-white font-bold order-3 md:order-none cursor-pointer">
+      Ehtisham's
+      <span class="text-[#fd3e57] text-2xl"><i class="fa-sharp fa-solid fa-p"></i></span>
+      Follio
+    </div>
+    <div class="text-white flex md:space-x-14 space-x-3">
+      <div class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1 p-4 md:border-none">
+        About
+      </div>
+      <div class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1  p-4 md:border-none">
+        Portfolio
+      </div>
+      <div class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1 p-4 md:border-none">
+        Blogs
+      </div>
+      <div class="cursor-pointer text-sm hover:text-[1rem] hover:-mt-1  p-4 md:border-none">
+        Contact
+      </div>
+    </div>
+    <div class="social_icon flex space-x-8 mt-3">
+      <button
+        class="text-xl md:text-2xl text-[#0077b5] border border-[#0077b5] p-1 pl-2 pr-2 rounded-[50%] cursor-pointer md:hover:text-3xl">
+        <i class="fa-brands fa-linkedin"></i>
+      </button>
+      <button
+        class="text-xl md:text-2xl text-[#3b579d] border border-[#3b579d] p-1 pl-2 pr-2 rounded-[50%] cursor-pointer md:hover:text-3xl">
+        <i class="fa-brands fa-square-facebook"></i>
+      </button>
+      <button
+        class="text-xl md:text-2xl text-white border border-black p-1 pl-2 pr-2 rounded-[50%] cursor-pointer md:hover:text-3xl">
+        <i class="fa-brands fa-github"></i>
+      </button>
+    </div>
+
+  </div>
+  <!-- //copyrightsection -->
+  <div class="h-[100px] flex justify-center items-center">
+    <span class="text-white text-sm"><i class="fa-regular fa-copyright"></i> 2023 Follo. All rights reserved</span>
+  </div>
+ </div>
+ <!-- script -->
+  <script src="./landing.js"></script>
+</body>
+
+</html>
