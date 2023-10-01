@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/f448c1038a.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="./assests/4341087.png" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg custom_bg shadow-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">iOS/Android Calculator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid custom_bg  ">
+        <div class="container  d-flex justify-content-center align-items-center ">
+            <div id="calculator" class=" calculator mt-5 p-4 rounded-lg shadow-lg shadow-white w-25">
+                <div class="form-check form-switch text-light  ">
+                    <input class="form-check-input fw-bold " onclick="darkmode()" type="checkbox" role="switch"
+                        id="flexSwitchCheckDefault">
+                    <label class="form-check-label fw-bold " id="lable" for="flexSwitchCheckDefault">Enable Light
+                        Mode</label>
+                </div>
+                <div class="mb-2 mt-2">
+                    <input disabled id="textarea" class="form-control input " id="calculator_input" rows="3"></input>
+                </div>
+                <div id="calculator_btn_sec" class="  calculator_btn_sec row d-flex flex-col gap-3">
+                    <div class=" col d-flex gap-3">
+                        <button data-value="" id="clearTextArea" onclick="clearTextArea()" class="custom_btn text-warning ">C</button>
+                        <button data-value="(" class="custom_btn">(</button>
+                        <button data-value=")" class="custom_btn">)</button>
+                        <button data-value="/" class="custom_btn ">/</button>
+                    </div>
+                    <div class="col d-flex  gap-3">
+                        <button data-value="7" class="custom_btn">7</button>
+                        <button data-value="8" class="custom_btn">8</button>
+                        <button data-value="9" class="custom_btn">9</button>
+                        <button data-value="*" class="custom_btn"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="col d-flex gap-3">
+                        <button data-value="4" class="custom_btn">4</button>
+                        <button data-value="5" class="custom_btn">5</button>
+                        <button data-value="6" class="custom_btn">6</button>
+                        <button data-value="-" class="custom_btn"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div class="col d-flex gap-3">
+                        <button data-value="1" class="custom_btn">1</button>
+                        <button data-value="2" class="custom_btn">2</button>
+                        <button data-value="3" class="custom_btn">3</button>
+                        <button data-value="+" class="custom_btn"><i class="fa-solid fa-plus  "></i></button>
+                    </div>
+                    <div class="col d-flex gap-3">
+                        <button data-value="0" class="custom_btn">0</button>
+                        <button data-value="." class="custom_btn">.</button>
+                        <button data-value="" onclick="deleteValue()" class="custom_btn"><i class="fa-solid fa-delete-left text-danger"></i></button>
+                        <button data-value="" id="evaluteExpression" onclick="evaluteExpression()"
+                            class="custom_btn"><i class="fa-solid fa-equals text-primary"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom_h custom_bg ">
+
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f448c1038a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

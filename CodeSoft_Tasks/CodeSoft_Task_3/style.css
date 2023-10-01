@@ -1,0 +1,47 @@
+
+  
+  .custom_bg {
+    background-color: #cdfafd;
+  }
+
+  .custom_btn{
+    border-radius: 50%;
+    border: none;
+    background-color: #374352;
+    color: white;
+    padding: 14px 18px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   
+  }
+  .custom_btn_light{
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 14px 18px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   
+  }
+
+ 
+  .calculator{
+    background-color: #374352;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px black;
+  }
+
+  .input{
+    height: 70px;
+    text-align: right;
+    font-size: 1.5rem;
+  }
+
+  .lightMode{
+
+    background-color: white;
+    color: white;
+  }
+  .custom_h{
+    height: 100px;
+  }
