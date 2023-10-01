@@ -55,11 +55,9 @@ const clearTextArea=()=>{
     
 }
 
-const deleteValue=()=>{
-
+const deleteValue = () => {
     const currentvalue = textarea.value;
-    if(currentvalue > 0){
-      textarea.value =   currentvalue.slice(0,-1)
+    if(currentvalue.length > 0){
+        textarea.value = currentvalue.slice(0,-1);
     }
-
 }
